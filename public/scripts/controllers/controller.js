@@ -11,6 +11,7 @@
 (function(module) {
     const aboutController = {}
     aboutController.render = function() {
+        window.location.href = '#about';
         $('.tab-content').hide();
         $('#about').fadeIn();
     }
@@ -20,6 +21,7 @@
 (function(module) {
     const placesController = {}
     placesController.render = function() {
+        window.location.href = '#places';
         $('.tab-content').hide();
         $('#places').fadeIn();
     }
@@ -29,6 +31,7 @@
 (function(module) {
     const submitController = {}
     submitController.render = function() {
+        window.location.href = '#submit';
         $('.tab-content').hide();
         $('#submit').fadeIn();
 
@@ -47,3 +50,10 @@ page('/submit', submitController.render);
 
 // Activate page.js
 page();
+
+//For arrow clicker
+$("#arrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#tea-lo").offset().top
+    }, 1000);
+});
