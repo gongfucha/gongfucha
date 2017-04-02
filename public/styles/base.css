@@ -29,7 +29,7 @@ main {
 }
 
 /*Pointer for arrow*/
-#arrow {
+#arrow, a {
   cursor: pointer;
 }
 
