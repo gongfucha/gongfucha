@@ -69,7 +69,7 @@ view.handleCategoryFilter = function() {
     view.tags.map(function(i) {
       $(`article[data-category="${(i)}"]`).fadeIn();
       $(`article[data-city="${(i)}"]`).fadeIn();
-      showResultMarkers();
+      googleMap.showResultMarkers();
     });
   } else {
     $('article').fadeIn();
@@ -96,7 +96,7 @@ searchAnimation();
 view.initIndexPage = function () {
   TeaLocation.all.forEach(a => $('#tea-sidebar').append(a.toHtml()));
   //solves timing issue for Maps API
-  var initUrl = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCS7efQ1L1Es_cFLNYRgXoOZ65bxGf3j2A&callback=initMap';
+  var initUrl = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCS7efQ1L1Es_cFLNYRgXoOZ65bxGf3j2A&callback=googleMap.initMap';
   var body = document.getElementsByTagName('body')[0];
   var js = document.createElement('script');
   js.type = 'text/javascript';
