@@ -52,29 +52,34 @@ app.get('/maps', function(request, response) {
 });
 
 // Insert into tables
-app.post('/tea', function(request, response) {
-  client.query(
-    `INSERT INTO
+app.post('/tea', function (request, response) {
+  superAgent.post('https://www.google.com/recaptcha/api/siteverify')
+    .send({ secret: '6Le3mhsUAAAAAFkV9yys4LTnPb0tD7rHHkJKCZPK', response: request.body['g-recaptcha-response'] })
+    .then(function (responseFromRecaptcha) {
+      client.query(
+        `INSERT INTO
     tea_locations(shopname, "shopUrl", description, street, city, state, zip, country, category)
     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);`,
-    [
-      request.body.shopname,
-      request.body.shopUrl,
-      request.body.description,
-      request.body.street,
-      request.body.city,
-      request.body.state,
-      request.body.zip,
-      request.body.country,
-      request.body.category
-    ]
-  )
-  .then(function() {
-    response.status(201).send('insert complete');
-  })
-  .catch(function(err){
-    console.log(err);
-  })
+        [
+          request.body.shopname,
+          request.body.shopUrl,
+          request.body.description,
+          request.body.street,
+          request.body.city,
+          request.body.state,
+          request.body.zip,
+          request.body.country,
+          request.body.category
+        ]
+      )
+    })
+    .then(function () {
+      response.status(201).send('insert complete');
+    })
+    .catch(function (err) {
+      console.log(err);
+    })
+}
 });
 
 loadDB();

@@ -43,9 +43,16 @@ Manipulating Tea Location Database
 //insert a new tea shop from the form
 TeaLocation.insertLocation = function (data, callback) {
   const newLocation = {
-    shopname: data[0].value, shopUrl: data[1].value, description: data[2].value, 
-    street: data[3].value, city: data[4].value, state: data[5].value, zip: data[6].value,
-    country: data[7].value, category: data[8].value
+    shopname: data[0].value, 
+    shopUrl: data[1].value, 
+    description: data[2].value, 
+    street: data[3].value, 
+    city: data[4].value, 
+    state: data[5].value, 
+    zip: data[6].value,
+    country: data[7].value, 
+    category: data[8].value, 
+    'g-recaptcha-response': data[9].value
   }
   $.ajax({
     url: '/tea', 
