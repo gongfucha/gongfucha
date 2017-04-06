@@ -10,6 +10,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 //loads rest of CSS assets in public
 app.use(express.static('./public'));
+
+// try to keep console.logs out of production builds unless you're specifically trying to notify
+// the user of something.
 console.log(process.env);
 
 //Connect to postgres or heroku DB

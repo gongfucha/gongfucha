@@ -54,6 +54,7 @@
 
   googleMap.createInfoWindow = function(res, shop) {
     return new google.maps.InfoWindow({
+      // since Handlebars returns an HTML string you could have used a handlebars template here.
       content: `<p style="font-weight:bold;">${shop.shopname}</p>
                 <p>${res.result.formatted_address}</p>
                 ${googleMap.open}
@@ -96,6 +97,8 @@
     googleMap.removeMarkers();
     $('.shopsection:visible').each((index, shop) => {
       let teaLocationId = parseInt($(shop).attr('data-tea-location-id'));
+      // one line return could use the braceless arrow syntax
+      // let teaLocation = Tealocation.all.find(tl => tl.tealocationId === teaLocationId)
       let teaLocation = TeaLocation.all.find(tl => {
         return tl.tealocation_id === teaLocationId;
       });

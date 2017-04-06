@@ -27,6 +27,7 @@ Filters (Tea Locations)
 ------------------------------*/
 //This function grabs the data attributes from our tea list and populates the search filters.
 view.populateFilters = function () {
+  // I don't see anything with a class of template. I'm not sure why this is here.
   $('article').each(function () {
     if (!$(this).hasClass('template')) {
       var val = $(this).attr('data-category');
@@ -48,6 +49,9 @@ view.tags = [];
 
 view.toggleButton = function () {
   $('.filter').on('click', "div", function (e) {
+    // generally you should stick with either jQuery or vanilla JS syntax
+    // this could have been:
+    // $(this).toggleClass('tagged');
     e.target.classList.toggle("tagged");
     var idx = view.tags.indexOf(e.target.textContent);
       if (idx === -1) {
@@ -84,10 +88,13 @@ Taking information from new form
 $("#new-tea-location").submit(function(event) {
   event.preventDefault();
   let newLocation;
-  newLocation = $(this).serializeArray() 
+  // Nice work finding a method for this but form data is generally better
+  // represented as an object since you're going to be asking for the fields
+  // by name.
+  newLocation = $(this).serializeArray()
   $('#new-tea-location').empty();
   //append new TeaLocation to database
-  
+
   TeaLocation.insertLocation(newLocation, view.initIndexPage);
 });
 

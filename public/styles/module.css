@@ -92,7 +92,7 @@ Map Styles
 Media Queries
 ------------*/
 
-@media (min-width: 800px) { 
+@media (min-width: 800px) {
 
   /*header*/
   header {
@@ -117,19 +117,19 @@ Media Queries
 
   #first-tab {
   border-left: none;
-  border-top: none; 
+  border-top: none;
   }
 
   /*Welcome text*/
 
   #welcome-text h1 {
     font-size: 2.5em;
-    margin: 1.75%; 
+    margin: 1.75%;
   }
 
   #welcome-text h3 {
     font-size: 1.25em;
-    margin: 1.75%; 
+    margin: 1.75%;
   }
 
   #youtube-video iframe {
@@ -143,16 +143,19 @@ Submit & Forms
 form {
   margin: 5% 0% 5% 0%; }
 
-.two-field-form { 
+.two-field-form {
   display: inline-block;
   width: 45%;
   margin: 5px 5px 5px 0px; }
 
-.three-field-form { 
+.three-field-form {
   display: inline-block;
   width: 30%;
   margin: 5px 5px 5px 0px; }
-
+/* I see you putting this on a lot of things that are the width of their parent
+container by default. It's likely not needed. Often if you want to use border-box
+you want to apply it to a lot of selectors at once so you don't have to remember
+which ones have it and which don't.*/
 .full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -187,5 +190,5 @@ legend {
   color: #333;
   background-color:#33C3F0;
   border-color: #888;
-  outline: 0; 
+  outline: 0;
   }
