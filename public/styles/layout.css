@@ -1,6 +1,4 @@
-/*
-  Layout rules divide the page into sections. Layouts hold one or more modules together.
-*/
+/* Layout */
 
 /*-----------
 Landing Page
@@ -133,9 +131,6 @@ Places & Search
 
 .shopheader {
   margin: 10px 0%;
-  /*font-family: 'Reenie Beanie', cursive;*/
-  
-  /*font-family: 'Waiting for the Sunrise', cursive;*/
   }
 
 .shopsection {
