@@ -38,7 +38,7 @@ app.get('/tea', function (request, response) {
     })
 });
 
-app.get('/maps', function(request, response) {
+app.get('/maps', function (request, response) {
   superAgent
     .get(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${request.query.query}&key=${process.env.API_KEY}`)
     .then(results => results.body)
@@ -79,7 +79,6 @@ app.post('/tea', function (request, response) {
     .catch(function (err) {
       console.log(err);
     })
-}
 });
 
 loadDB();
