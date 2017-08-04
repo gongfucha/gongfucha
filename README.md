@@ -1,3 +1,5 @@
+* Note: I am currently working on remaking this project from scratch using ReactJS and expanding upon it.
+
 # Gongfucha: Community Database
 
 ## Summary
