@@ -1,9 +1,9 @@
-# Gongfucha: Community Database
+# Gongfutea: Community Database
 
 ## Summary
 An interactive database for lovers and enthusiasts of gong fu cha. Built by tea enthusiasts, for tea enthusiasts. 
 
-Gongfucha does accept pull requests - please include clear comments in both your code and your PR about what the issue is that you have fixed and how.
+Gongfutea does accept pull requests - please include clear comments in both your code and your PR about what the issue is that you have fixed and how.
 
 ## Technical Stack
 * HTML
@@ -32,8 +32,6 @@ We are just getting started here. In the future, we will add:
 * Review functionality
 * List of tea blogs
 * Database of tasting notes
-
-Gongfucha does accept pull requests - please include clear comments in both your code and your PR about what the issue is that you have fixed and how.
 
 ## Special Thanks
 * Amy Chen
