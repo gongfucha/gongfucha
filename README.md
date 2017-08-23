@@ -1,10 +1,10 @@
 
 # Gongfutea: Community Database
 
-* Note: I am currently working on remaking this project from scratch using ReactJS and expanding upon it.
+* Note: We are currently working on remaking this project from scratch using ReactJS and expanding upon it.
 
 ## Summary
-An interactive database for lovers and enthusiasts of gong fu cha. Built by tea enthusiasts, for tea enthusiasts. 
+An interactive database for lovers and enthusiasts of gong fu cha. Built by tea enthusiasts, for tea enthusiasts. This website is an extension of the popular facebook group Gong Fu Cha run by Nicky Evers of this project. ```https://www.facebook.com/groups/gongfucha/?fref=nf``` 
 
 Gongfutea does accept pull requests - please include clear comments in both your code and your PR about what the issue is that you have fixed and how.
 
@@ -41,16 +41,8 @@ We are just getting started here. In the future, we will add:
 * Aaron Krause
 * Tom Timmel
 
-<<<<<<< HEAD
 ## About the Founders 
 * [Nicky](https://github.com/NeversSync)
 * [Yuval](https://github.com/themarquisdesheric)
 * [Keeley](https://github.com/VerteDinde)
 * Martin 
-=======
-## About the Developers
-* Nicky
-* Yuval
-* Keeley
-* Martin 
->>>>>>> e1b1508faf95dd8f6e65c043a6de86598d939447
