@@ -55,7 +55,7 @@ app.get('/maps', function (request, response) {
 // Insert into tables
 app.post('/tea', function (request, response) {
   superAgent.post('https://www.google.com/recaptcha/api/siteverify')
-    .send({ secret: '6Le5uT8UAAAAAAilM8jOs2z_mPL5_Hj_T3bvv1zg', response: request.body['g-recaptcha-response'] })
+    .send({ secret: '6LcFI0UUAAAAANYk-r-f79FmITFIGR1I_uQj8E1E', response: request.body['g-recaptcha-response'] })
     .then(function (responseFromRecaptcha) {
       client.query(
         `INSERT INTO
