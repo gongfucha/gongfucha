@@ -232,6 +232,41 @@ Sidebar & Map
   height: 400px;
   width: 100%; }
 
+.form-submit-wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+}
+
+.submit-button {
+    height: 60px;
+    width: 175px;
+    font-size: 19px;
+    margin: 10px;
+    background: linear-gradient(hsla(23, 89%, 70%, 1), hsla(23, 89%, 51%, 1));
+    color: #fff;
+    border-bottom: 3px solid hsla(23, 88%, 37%, .7);
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button:hover {
+    background: linear-gradient(hsla(23, 100%, 80%, 1), hsla(23, 100%, 70%, 1));
+    color: #fff;
+}
+
+.submit-button:active {
+    background: linear-gradient(hsla(23, 90%, 46%, 1), hsla(23, 90%, 40%, 1));
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    border-bottom: none;
+    box-shadow: none;
+}
+}
+
 #youtube-video {
   display: none;
 }
@@ -342,6 +377,8 @@ Sidebar & Map
   width: 100%;
   }
 }
+
+
 
 @media (min-width: 1000px) {
   nav ul li {
