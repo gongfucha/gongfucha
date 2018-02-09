@@ -4,7 +4,18 @@
 Landing Page
 -------------*/
 #landing-page {
+  height: 84vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media(min-width:800px) {
+  #landing-page {
+    height: 70vh;
+  }
 }
 
 #video-wrapper {
@@ -19,7 +30,7 @@ Landing Page
 
 video { 
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 header {
@@ -70,12 +81,10 @@ nav ul li {
 }
 
 #arrow {
-  text-align: center;
-  font-size: 50px;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 70px;
   height: 70px;
-  margin: 0px auto;
   animation: bounce 2s ease-in-out;
   }
 
@@ -84,6 +93,14 @@ Places & Search
 ------------*/
 #places {
   margin-bottom: 5%; }
+
+.tea-locator {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
   
 #places h3 {
   font-size: 20px;
@@ -343,6 +360,7 @@ Sidebar & Map
   }
 
   #welcome-text {
-    margin: 8% auto 13% auto; 
+    width: 80%;
+    margin: 8% auto 10% auto; 
   }
 }
