@@ -10,6 +10,8 @@
 	<link type="text/css" rel="stylesheet" href="styles/layout.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One|Quicksand" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/assets/img/icons/teapot-logo-01.svg"/>
+	<link rel="shortcut icon" type="image/png" href="/assets/img/icons/teapot-logo-01.svg"/>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script id="tealocation-template" type="text/x-handlebars-template">
 		<article class="shopsection" data-category="{{category}}" data-city="{{city}}" data-tea-location-id="{{tealocation_id}}">
@@ -51,11 +53,13 @@
 				</div>
 				<div id="arrow"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></div>
 			</section>
-		<section id="places" class="tab-content ">
-			<h2 id="locator-heading">Tea Locator</h2>
-			<div class="search-bar">
-				<p>Search for a specific tea shop or location here:</p>
-				<div id="search-box"><input></div>
+		<section id="places" class="tab-content">
+			<div class="tea-locator">
+				<h2 id="locator-heading">Tea Locator</h2>
+				<div class="search-bar">
+					<p>Search for a specific tea shop or location here:</p>
+					<div id="search-box"><input></div>
+				</div>
 			</div>
 			<div id="search-settings-nav">Search Settings <i class="fa fa-cog" aria-hidden="true"></i></div>
 			<div id="search-settings">
@@ -133,12 +137,12 @@
 								</select>
 							</div>
 						</div>
-						<div class="g-recaptcha" data-sitekey="6Le3mhsUAAAAANrFMDvZncFffxbCUMtcN_EUm0pB"></div>
+						<div class="g-recaptcha" data-sitekey="6LcFI0UUAAAAAJenspVuUxn3wbb38yWvEPkeZP5i"></div>
 						<input id="form-submit-button" class="button" type="submit">
 				</form>
 			</section>
 			<section id="youtube-video">
-				<iframe width="853" height="480" src="https://www.youtube.com/embed/OHpR5mjgg_A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="720" height="480" src="https://www.youtube.com/embed/9ngRCtNINCA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</section>
 	</main>
 	<footer>
@@ -159,3 +163,6 @@
 	<script src="scripts/controllers/controller.js"></script>
 </body>
 </html>
+
+<!-- make site responsive/mobile first -->
+<!-- add favicon -->
