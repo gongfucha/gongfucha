@@ -214,12 +214,12 @@ Sidebar & Map
   margin: 2% auto;
   text-align: center;
   display: inline-block;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 
 @media(min-width: 800px) {
   #tea-sidebar {
-    overflow-y: visible;
+    overflow-y: scroll;
   }
 }
 
