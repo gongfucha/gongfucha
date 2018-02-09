@@ -76,7 +76,7 @@ nav ul li {
 #welcome-text {
   width: 85%;
   text-align: center;
-  margin: 8% auto 17% auto; 
+  margin: 8% auto 19% auto; 
   padding-top: 5px;
 }
 
@@ -217,6 +217,12 @@ Sidebar & Map
   overflow-y: scroll;
 }
 
+@media(min-width: 800px) {
+  #tea-sidebar {
+    overflow-y: visible;
+  }
+}
+
 #map-parent {
   width: 100%;
   margin: 0px auto; 
@@ -264,7 +270,7 @@ Sidebar & Map
 
   /*WELCOME TEXT*/
   #welcome-text {
-    margin: 11% auto 13% auto;
+    margin: 9% auto 12% auto;
     padding: 3% 0px;
     text-align: center; 
   }
@@ -272,6 +278,10 @@ Sidebar & Map
   /*PLACES SECTION*/
   #locator-heading {
   margin-top: 5%;
+  }
+
+  .tea-locator {
+    margin-top: 60px;
   }
 
   #map {
@@ -338,6 +348,10 @@ Sidebar & Map
     margin: 15px;
     padding: 30px 30px;
     width: 6%;
+  }
+
+  .tea-locator {
+    margin-top: 40px;
   }
 
    #teapot-logo-div {
